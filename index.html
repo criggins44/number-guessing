@@ -14,8 +14,20 @@
 <body>
   <h1>Guess the Number</h1>
 
-<div id="numberBox">
-    <p id="hiddenNumber">20</p>
+<div id="numberBox" class="container">
+    <p id="hiddenNumber">??</p>
+</div>
+
+<div id="entryBoxes" class="container">
+  <form class="form-inline container" onsubmit="event.preventDefault();">
+    <label for="attemptOne">1st Attempt:</label>
+    <input type="attemptOne" id="attemptOne" placeholder="enter a number" name="attemptOne">
+     <label for="attemptTwo">2nd Attempt:</label>
+    <input type="attemptTwo" id="attemptTwo" placeholder="enter a number" name="attemptTwo">
+     <label for="attemptThree">3rd Attempt:</label>
+    <input type="attemptThree" id="attemptThree" placeholder="enter a number" name="attemptThree">
+    <button onclick="guessResult()">Submit</button>
+  </form>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">

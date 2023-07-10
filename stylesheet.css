@@ -1,11 +1,28 @@
-#hiddenNumber {
-	font-size: 35px;
-	border: 3px solid black;
-	text-align: center;
-	margin-top: 2em;
-}
-
 h1 {
 	text-align: center;
 	padding-top: 25px;
+}
+
+#hiddenNumber {
+	font-size: 50px;
+	padding: 10px;
+	border: 3px solid black;
+
+}
+
+#numberBox {
+	display: flex;
+	margin-top: 30px;
+	align-content: center;
+	justify-content: center;
+}
+
+#form-inline {
+	display: flex;
+	justify-content: center;
+}
+
+.form-inline input {
+	margin-right: 20px;
+	margin-top: 30px;
 }
