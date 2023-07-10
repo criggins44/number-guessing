@@ -19,10 +19,11 @@ h1 {
 
 #form-inline {
 	display: flex;
+	align-content: center;
 	justify-content: center;
 }
 
 .form-inline input {
-	margin-right: 20px;
+	
 	margin-top: 30px;
 }

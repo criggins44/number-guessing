@@ -21,12 +21,19 @@
 <div id="entryBoxes" class="container">
   <form class="form-inline container" onsubmit="event.preventDefault();">
     <label for="attemptOne">1st Attempt:</label>
-    <input type="attemptOne" id="attemptOne" placeholder="enter a number" name="attemptOne">
+    <input type="attemptOne" id="attemptOne" placeholder="enter #" name="attemptOne">
+    <p id="guessMessage">Your guess is...</p>
+    <button onclick="firstSubmission()">Submit</button><br>
+
      <label for="attemptTwo">2nd Attempt:</label>
-    <input type="attemptTwo" id="attemptTwo" placeholder="enter a number" name="attemptTwo">
+    <input type="attemptTwo" id="attemptTwo" placeholder="enter #" name="attemptTwo">
+    <p id="guessMessage">Your guess is...</p>
+    <button onclick="secondSubmission()">Submit</button><br>
+
      <label for="attemptThree">3rd Attempt:</label>
-    <input type="attemptThree" id="attemptThree" placeholder="enter a number" name="attemptThree">
-    <button onclick="guessResult()">Submit</button>
+    <input type="attemptThree" id="attemptThree" placeholder="enter #" name="attemptThree">
+    <p id="guessMessage">Your guess is...</p>
+    <button onclick="thirdSubmission()">Submit</button>
   </form>
 </div>
 
