@@ -6,15 +6,29 @@ h1 {
 #hiddenNumber {
 	font-size: 50px;
 	padding: 10px;
-	border: 3px solid black;
+	text-align: center;
 
 }
 
-#numberBox {
+#numberContainer {
 	display: flex;
-	margin-top: 30px;
-	align-content: center;
 	justify-content: center;
+}
+
+#numberBox {
+	border: 3px solid black;
+	width: 25%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#beginContainer {
+	display: flex;
+	justify-content: center;
+}
+
+#beginBtn {
+	margin-top: 30px;
 }
 
 #form-inline {
