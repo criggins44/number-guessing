@@ -1,9 +1,9 @@
 //Number Guessing Game
-var answer = Math.floor(Math.random() * 101);
-var result = document.getElementById('guessesUsed');
-var feedback = document.getElementById('guessFeedback');
+let answer = Math.floor(Math.random() * 101);
+const result = document.getElementById('guessesUsed');
+const feedback = document.getElementById('guessFeedback');
 let numberOfGuesses = 0;
-var guessCounter = 0
+let guessCounter = 0
 
 function chooseNumber(){
 	Math.floor(Math.random() * 101);
@@ -28,11 +28,12 @@ function guessNumber(){
 			result.innerHTML = 'Used Guesses: ' + numberOfGuesses;
 			feedback.innerHTML = 'Your guess is: too high';
 		}
-		else if(userGuess = answer){
+		else if(userGuess == answer){
 			result.innerHTML = 'CONGRATULATIONS';
 		}
 	}
 	 if(guessCounter === 4){
+	 	result.innerHTML = 'The correct answer is ' + answer;
 	 	alert('GAME OVER');
 	 	return;
 	 }
