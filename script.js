@@ -1,16 +1,16 @@
 //Number Guessing Game
-let answer = Math.floor(Math.random() * 101);
+let answer = Math.floor(Math.random() * 11);
 const result = document.getElementById('guessesUsed');
 const feedback = document.getElementById('guessFeedback');
 let numberOfGuesses = 0;
 let guessCounter = 0
 
 function chooseNumber(){
-	Math.floor(Math.random() * 101);
+	Math.floor(Math.random() * 11);
 }
 
 function guessNumber(){
-	var userGuess = document.getElementById('guessBox').value
+	var userGuess = Number(document.getElementById('guessBox').value)
 
 	if(userGuess < 0 || userGuess > 100){
 		alert('Please enter a value 0 - 100');
@@ -28,7 +28,7 @@ function guessNumber(){
 			result.innerHTML = 'Used Guesses: ' + numberOfGuesses;
 			feedback.innerHTML = 'Your guess is: too high';
 		}
-		else if(userGuess == answer){
+		else if(userGuess === answer){
 			result.innerHTML = 'CONGRATULATIONS';
 		}
 	}
